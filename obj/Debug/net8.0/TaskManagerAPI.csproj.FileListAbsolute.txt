@@ -263,7 +263,6 @@ D:\BLACK_BUGS\Projetos_Pessoais\ProjetosNET\TaskManagerAPI-Renan\obj\Debug\net8.
 D:\BLACK_BUGS\Projetos_Pessoais\ProjetosNET\TaskManagerAPI-Renan\obj\Debug\net8.0\staticwebassets.build.json.cache
 D:\BLACK_BUGS\Projetos_Pessoais\ProjetosNET\TaskManagerAPI-Renan\obj\Debug\net8.0\staticwebassets.development.json
 D:\BLACK_BUGS\Projetos_Pessoais\ProjetosNET\TaskManagerAPI-Renan\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-D:\BLACK_BUGS\Projetos_Pessoais\ProjetosNET\TaskManagerAPI-Renan\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 D:\BLACK_BUGS\Projetos_Pessoais\ProjetosNET\TaskManagerAPI-Renan\obj\Debug\net8.0\TaskMana.7A261BF7.Up2Date
 D:\BLACK_BUGS\Projetos_Pessoais\ProjetosNET\TaskManagerAPI-Renan\obj\Debug\net8.0\TaskManagerAPI.dll
 D:\BLACK_BUGS\Projetos_Pessoais\ProjetosNET\TaskManagerAPI-Renan\obj\Debug\net8.0\refint\TaskManagerAPI.dll
