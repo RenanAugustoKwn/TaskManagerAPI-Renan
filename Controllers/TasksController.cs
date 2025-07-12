@@ -45,6 +45,10 @@ public class TasksController : ControllerBase
         var task = await _db.Tasks.FirstOrDefaultAsync(t => t.ProjectId == projectId && t.Id == id);
         if (task is null) return NotFound();
 
+        if (dto.Priority != task.Priority)
+        {
+            return BadRequest("Não é permitido alterar a prioridade da tarefa depois que ela foi criada.");
+        }
         task.Title = dto.Title;
         task.Details = dto.Details;
         task.Status = dto.Status;

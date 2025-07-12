@@ -46,8 +46,7 @@
               "RelativeToolTip": "Models\\Project.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-12T19:26:30.135Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-12T19:26:30.135Z"
             },
             {
               "$type": "Document",
@@ -59,8 +58,7 @@
               "RelativeToolTip": "DTOs\\ProjectDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-12T19:25:46.748Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-12T19:25:46.748Z"
             },
             {
               "$type": "Document",
@@ -72,8 +70,7 @@
               "RelativeToolTip": "Data\\AppDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAswAwAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-12T19:24:42.568Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-12T19:24:42.568Z"
             },
             {
               "$type": "Document",
@@ -85,8 +82,7 @@
               "RelativeToolTip": "DTOs\\CreateTaskItemDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-12T19:20:09.968Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-12T19:20:09.968Z"
             },
             {
               "$type": "Document",
@@ -96,7 +92,7 @@
               "RelativeDocumentMoniker": "Controllers\\TasksController.cs",
               "ToolTip": "D:\\BLACK_BUGS\\Projetos_Pessoais\\ProjetosNET\\TaskManagerAPI-Renan\\Controllers\\TasksController.cs",
               "RelativeToolTip": "Controllers\\TasksController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABwAAABYAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAowDUAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-12T19:17:11.251Z",
               "EditorCaption": ""
@@ -111,8 +107,7 @@
               "RelativeToolTip": "Controllers\\ProjectsController.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAA1wCoAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-12T19:16:22.699Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-12T19:16:22.699Z"
             }
           ]
         }
