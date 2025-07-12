@@ -5,20 +5,36 @@
     "version": "1.0"
   },
   "paths": {
-    "/api/projects": {
+    "/api/Projects": {
       "get": {
         "tags": [
-          "TaskManagerAPI"
+          "Projects"
         ],
         "responses": {
           "200": {
             "description": "OK",
             "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProjectDto"
+                  }
+                }
+              },
               "application/json": {
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Project"
+                    "$ref": "#/components/schemas/ProjectDto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProjectDto"
                   }
                 }
               }
@@ -28,29 +44,55 @@
       },
       "post": {
         "tags": [
-          "TaskManagerAPI"
+          "Projects"
         ],
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/ProjectDto"
+                "$ref": "#/components/schemas/CreateProjectDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateProjectDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateProjectDto"
               }
             }
-          },
-          "required": true
+          }
         },
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProjectDto"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProjectDto"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProjectDto"
+                }
+              }
+            }
           }
         }
       }
     },
-    "/api/projects/{id}/tasks": {
+    "/api/Projects/{id}/tasks": {
       "get": {
         "tags": [
-          "TaskManagerAPI"
+          "Projects"
         ],
         "parameters": [
           {
@@ -67,11 +109,27 @@
           "200": {
             "description": "OK",
             "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TaskItemDto"
+                  }
+                }
+              },
               "application/json": {
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/TaskItem"
+                    "$ref": "#/components/schemas/TaskItemDto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TaskItemDto"
                   }
                 }
               }
@@ -80,10 +138,10 @@
         }
       }
     },
-    "/api/projects/{projectId}/tasks": {
+    "/api/projects/{projectId}/Tasks": {
       "post": {
         "tags": [
-          "TaskManagerAPI"
+          "Tasks"
         ],
         "parameters": [
           {
@@ -100,25 +158,107 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/TaskDto"
+                "$ref": "#/components/schemas/CreateTaskItemDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateTaskItemDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateTaskItemDto"
               }
             }
-          },
-          "required": true
+          }
         },
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/TaskItemDto"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TaskItemDto"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TaskItemDto"
+                }
+              }
+            }
           }
         }
       }
     },
-    "/api/tasks/{id}": {
-      "put": {
+    "/api/projects/{projectId}/Tasks/{id}": {
+      "get": {
         "tags": [
-          "TaskManagerAPI"
+          "Tasks"
         ],
         "parameters": [
+          {
+            "name": "projectId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/TaskItemDto"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TaskItemDto"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TaskItemDto"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Tasks"
+        ],
+        "parameters": [
+          {
+            "name": "projectId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
           {
             "name": "id",
             "in": "path",
@@ -133,11 +273,20 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/TaskUpdateDto"
+                "$ref": "#/components/schemas/CreateTaskItemDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateTaskItemDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateTaskItemDto"
               }
             }
-          },
-          "required": true
+          }
         },
         "responses": {
           "200": {
@@ -147,9 +296,18 @@
       },
       "delete": {
         "tags": [
-          "TaskManagerAPI"
+          "Tasks"
         ],
         "parameters": [
+          {
+            "name": "projectId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
           {
             "name": "id",
             "in": "path",
@@ -170,16 +328,9 @@
   },
   "components": {
     "schemas": {
-      "Project": {
-        "required": [
-          "name"
-        ],
+      "CreateProjectDto": {
         "type": "object",
         "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int32"
-          },
           "name": {
             "type": "string",
             "nullable": true
@@ -187,13 +338,23 @@
           "description": {
             "type": "string",
             "nullable": true
-          },
-          "tasks": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/TaskItem"
-            },
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreateTaskItemDto": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
             "nullable": true
+          },
+          "details": {
+            "type": "string",
+            "nullable": true
+          },
+          "status": {
+            "$ref": "#/components/schemas/TaskStatus"
           }
         },
         "additionalProperties": false
@@ -201,6 +362,10 @@
       "ProjectDto": {
         "type": "object",
         "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
           "name": {
             "type": "string",
             "nullable": true
@@ -212,24 +377,7 @@
         },
         "additionalProperties": false
       },
-      "TaskDto": {
-        "type": "object",
-        "properties": {
-          "title": {
-            "type": "string",
-            "nullable": true
-          },
-          "details": {
-            "type": "string",
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "TaskItem": {
-        "required": [
-          "title"
-        ],
+      "TaskItemDto": {
         "type": "object",
         "properties": {
           "id": {
@@ -244,34 +392,15 @@
             "type": "string",
             "nullable": true
           },
-          "createdAt": {
-            "type": "string",
-            "format": "date-time"
-          },
           "status": {
             "$ref": "#/components/schemas/TaskStatus"
-          },
-          "priority": {
-            "$ref": "#/components/schemas/TaskPriority"
           },
           "projectId": {
             "type": "integer",
             "format": "int32"
-          },
-          "project": {
-            "$ref": "#/components/schemas/Project"
           }
         },
         "additionalProperties": false
-      },
-      "TaskPriority": {
-        "enum": [
-          0,
-          1,
-          2
-        ],
-        "type": "integer",
-        "format": "int32"
       },
       "TaskStatus": {
         "enum": [
@@ -281,23 +410,6 @@
         ],
         "type": "integer",
         "format": "int32"
-      },
-      "TaskUpdateDto": {
-        "type": "object",
-        "properties": {
-          "title": {
-            "type": "string",
-            "nullable": true
-          },
-          "details": {
-            "type": "string",
-            "nullable": true
-          },
-          "status": {
-            "$ref": "#/components/schemas/TaskStatus"
-          }
-        },
-        "additionalProperties": false
       }
     }
   }

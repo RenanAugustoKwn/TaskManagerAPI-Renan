@@ -1,50 +1,56 @@
 [
   {
-    "ContainingType": "Program\u002B\u003C\u003Ec",
-    "Method": "\u003C\u003CMain\u003E$\u003Eb__0_2",
-    "RelativePath": "api/projects",
+    "ContainingType": "TaskManagementApiProject.Controllers.ProjectsController",
+    "Method": "GetProjects",
+    "RelativePath": "api/Projects",
     "HttpMethod": "GET",
-    "IsController": false,
+    "IsController": true,
     "Order": 0,
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.List\u00601[[TaskManagerApi.Models.Project, TaskManagerAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[TaskManagementApiProject.DTOs.ProjectDto, TaskManagerAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
-          "application/json"
+          "text/plain",
+          "application/json",
+          "text/json"
         ],
         "StatusCode": 200
       }
     ]
   },
   {
-    "ContainingType": "Program\u002B\u003C\u003Ec",
-    "Method": "\u003C\u003CMain\u003E$\u003Eb__0_4",
-    "RelativePath": "api/projects",
+    "ContainingType": "TaskManagementApiProject.Controllers.ProjectsController",
+    "Method": "CreateProject",
+    "RelativePath": "api/Projects",
     "HttpMethod": "POST",
-    "IsController": false,
+    "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "dto",
-        "Type": "ProjectDto",
+        "Type": "TaskManagementApiProject.DTOs.CreateProjectDto",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "System.Void",
-        "MediaTypes": [],
+        "Type": "TaskManagementApiProject.DTOs.ProjectDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
         "StatusCode": 200
       }
     ]
   },
   {
-    "ContainingType": "Program\u002B\u003C\u003Ec",
-    "Method": "\u003C\u003CMain\u003E$\u003Eb__0_3",
-    "RelativePath": "api/projects/{id:int}/tasks",
+    "ContainingType": "TaskManagementApiProject.Controllers.ProjectsController",
+    "Method": "GetTasksForProject",
+    "RelativePath": "api/Projects/{id}/tasks",
     "HttpMethod": "GET",
-    "IsController": false,
+    "IsController": true,
     "Order": 0,
     "Parameters": [
       {
@@ -55,20 +61,22 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.List\u00601[[TaskManagerApi.Models.TaskItem, TaskManagerAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[TaskManagementApiProject.DTOs.TaskItemDto, TaskManagerAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
-          "application/json"
+          "text/plain",
+          "application/json",
+          "text/json"
         ],
         "StatusCode": 200
       }
     ]
   },
   {
-    "ContainingType": "Program\u002B\u003C\u003Ec",
-    "Method": "\u003C\u003CMain\u003E$\u003Eb__0_5",
-    "RelativePath": "api/projects/{projectId:int}/tasks",
+    "ContainingType": "TaskManagementApiProject.Controllers.TasksController",
+    "Method": "CreateTask",
+    "RelativePath": "api/projects/{projectId}/Tasks",
     "HttpMethod": "POST",
-    "IsController": false,
+    "IsController": true,
     "Order": 0,
     "Parameters": [
       {
@@ -78,26 +86,66 @@
       },
       {
         "Name": "dto",
-        "Type": "TaskDto",
+        "Type": "TaskManagementApiProject.DTOs.CreateTaskItemDto",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "System.Void",
-        "MediaTypes": [],
+        "Type": "TaskManagementApiProject.DTOs.TaskItemDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
         "StatusCode": 200
       }
     ]
   },
   {
-    "ContainingType": "Program\u002B\u003C\u003Ec",
-    "Method": "\u003C\u003CMain\u003E$\u003Eb__0_6",
-    "RelativePath": "api/tasks/{id:int}",
-    "HttpMethod": "PUT",
-    "IsController": false,
+    "ContainingType": "TaskManagementApiProject.Controllers.TasksController",
+    "Method": "GetTask",
+    "RelativePath": "api/projects/{projectId}/Tasks/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
     "Order": 0,
     "Parameters": [
+      {
+        "Name": "projectId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "TaskManagementApiProject.DTOs.TaskItemDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TaskManagementApiProject.Controllers.TasksController",
+    "Method": "UpdateTask",
+    "RelativePath": "api/projects/{projectId}/Tasks/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "projectId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
       {
         "Name": "id",
         "Type": "System.Int32",
@@ -105,38 +153,31 @@
       },
       {
         "Name": "dto",
-        "Type": "TaskUpdateDto",
+        "Type": "TaskManagementApiProject.DTOs.CreateTaskItemDto",
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
-    "ContainingType": "Program\u002B\u003C\u003Ec",
-    "Method": "\u003C\u003CMain\u003E$\u003Eb__0_7",
-    "RelativePath": "api/tasks/{id:int}",
+    "ContainingType": "TaskManagementApiProject.Controllers.TasksController",
+    "Method": "DeleteTask",
+    "RelativePath": "api/projects/{projectId}/Tasks/{id}",
     "HttpMethod": "DELETE",
-    "IsController": false,
+    "IsController": true,
     "Order": 0,
     "Parameters": [
+      {
+        "Name": "projectId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
       {
         "Name": "id",
         "Type": "System.Int32",
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   }
 ]
