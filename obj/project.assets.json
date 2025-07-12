@@ -2749,11 +2749,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\BLACK_BUGS\\Projetos_Pessoais\\ProjetosNET\\TaksManager\\TaskManagerTeste\\TaskManagerAPI\\TaskManagerAPI.csproj",
+      "projectUniqueName": "D:\\BLACK_BUGS\\Projetos_Pessoais\\ProjetosNET\\TaskManagerAPI-Renan\\TaskManagerAPI.csproj",
       "projectName": "TaskManagerAPI",
-      "projectPath": "D:\\BLACK_BUGS\\Projetos_Pessoais\\ProjetosNET\\TaksManager\\TaskManagerTeste\\TaskManagerAPI\\TaskManagerAPI.csproj",
+      "projectPath": "D:\\BLACK_BUGS\\Projetos_Pessoais\\ProjetosNET\\TaskManagerAPI-Renan\\TaskManagerAPI.csproj",
       "packagesPath": "C:\\Users\\renan\\.nuget\\packages\\",
-      "outputPath": "D:\\BLACK_BUGS\\Projetos_Pessoais\\ProjetosNET\\TaksManager\\TaskManagerTeste\\TaskManagerAPI\\obj\\",
+      "outputPath": "D:\\BLACK_BUGS\\Projetos_Pessoais\\ProjetosNET\\TaskManagerAPI-Renan\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

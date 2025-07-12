@@ -13,7 +13,7 @@ using System.Reflection;
 
 [assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("d18a1770-0f36-4294-9344-7745a4aab339")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("TaskManagerAPI")]
-[assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
+[assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6ae24a2f7834060d834bd2e3ebee88e463fcfb0b")]
 [assembly: System.Reflection.AssemblyProductAttribute("TaskManagerAPI")]
