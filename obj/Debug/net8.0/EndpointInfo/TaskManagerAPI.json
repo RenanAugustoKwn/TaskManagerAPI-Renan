@@ -355,6 +355,9 @@
           },
           "status": {
             "$ref": "#/components/schemas/TaskStatus"
+          },
+          "priority": {
+            "$ref": "#/components/schemas/TaskPriority"
           }
         },
         "additionalProperties": false
@@ -395,12 +398,24 @@
           "status": {
             "$ref": "#/components/schemas/TaskStatus"
           },
+          "priority": {
+            "$ref": "#/components/schemas/TaskPriority"
+          },
           "projectId": {
             "type": "integer",
             "format": "int32"
           }
         },
         "additionalProperties": false
+      },
+      "TaskPriority": {
+        "enum": [
+          0,
+          1,
+          2
+        ],
+        "type": "integer",
+        "format": "int32"
       },
       "TaskStatus": {
         "enum": [

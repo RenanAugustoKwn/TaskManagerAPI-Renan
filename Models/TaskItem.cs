@@ -3,7 +3,8 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace TaskManagementApiProject.Models;
 
-public enum TaskStatus { Todo, InProgress, Done }
+public enum TaskStatus { Pending, InProgress, Done }
+public enum TaskPriority { Low, Medium, High }
 
 public class TaskItem
 {
@@ -16,7 +17,8 @@ public class TaskItem
 
     public string? Details { get; set; }
 
-    public TaskStatus Status { get; set; } = TaskStatus.Todo;
+    public TaskStatus Status { get; set; } = TaskStatus.Pending;
+    public TaskPriority Priority { get; set; } = TaskPriority.Low;
 
     [ForeignKey(nameof(Project))]
     public int ProjectId { get; set; }

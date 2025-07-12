@@ -10,7 +10,7 @@ using TaskManagementApiProject.Data;
 namespace TaskManagerAPI.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20250712191348_UpdateSchema")]
+    [Migration("20250712194001_UpdateSchema")]
     partial class UpdateSchema
     {
         /// <inheritdoc />
@@ -46,6 +46,9 @@ namespace TaskManagerAPI.Migrations
 
                     b.Property<string>("Details")
                         .HasColumnType("TEXT");
+
+                    b.Property<int>("Priority")
+                        .HasColumnType("INTEGER");
 
                     b.Property<int>("ProjectId")
                         .HasColumnType("INTEGER");

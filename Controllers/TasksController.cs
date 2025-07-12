@@ -21,12 +21,12 @@ public class TasksController : ControllerBase
         var project = await _db.Projects.FindAsync(projectId);
         if (project is null) return NotFound();
 
-        var task = new TaskItem { Title = dto.Title, Details = dto.Details, Status = dto.Status, ProjectId = projectId };
+        var task = new TaskItem { Title = dto.Title, Details = dto.Details, Status = dto.Status, Priority = dto.Priority, ProjectId = projectId };
         _db.Tasks.Add(task);
         await _db.SaveChangesAsync();
 
         return CreatedAtAction(nameof(GetTask), new { projectId, id = task.Id },
-            new TaskItemDto(task.Id, task.Title, task.Details, task.Status, projectId));
+            new TaskItemDto(task.Id, task.Title, task.Details, task.Status,task.Priority, projectId));
     }
 
     // GET: api/projects/1/tasks/2
@@ -35,7 +35,7 @@ public class TasksController : ControllerBase
     {
         var task = await _db.Tasks.FirstOrDefaultAsync(t => t.ProjectId == projectId && t.Id == id);
         if (task is null) return NotFound();
-        return new TaskItemDto(task.Id, task.Title, task.Details, task.Status, task.ProjectId);
+        return new TaskItemDto(task.Id, task.Title, task.Details, task.Status, task.Priority, task.ProjectId);
     }
 
     // PUT: api/projects/1/tasks/2

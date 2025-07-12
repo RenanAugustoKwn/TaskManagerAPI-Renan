@@ -3,8 +3,28 @@
   "WorkspaceRootPath": "D:\\BLACK_BUGS\\Projetos_Pessoais\\ProjetosNET\\TaskManagerAPI-Renan\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6690E217-1461-4320-8FCF-BBD503350454}|TaskManagerAPI.csproj|d:\\black_bugs\\projetos_pessoais\\projetosnet\\taskmanagerapi-renan\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6690E217-1461-4320-8FCF-BBD503350454}|TaskManagerAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6690E217-1461-4320-8FCF-BBD503350454}|TaskManagerAPI.csproj|d:\\black_bugs\\projetos_pessoais\\projetosnet\\taskmanagerapi-renan\\controllers\\taskscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6690E217-1461-4320-8FCF-BBD503350454}|TaskManagerAPI.csproj|solutionrelative:controllers\\taskscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6690E217-1461-4320-8FCF-BBD503350454}|TaskManagerAPI.csproj|d:\\black_bugs\\projetos_pessoais\\projetosnet\\taskmanagerapi-renan\\dtos\\createtaskitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6690E217-1461-4320-8FCF-BBD503350454}|TaskManagerAPI.csproj|solutionrelative:dtos\\createtaskitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6690E217-1461-4320-8FCF-BBD503350454}|TaskManagerAPI.csproj|d:\\black_bugs\\projetos_pessoais\\projetosnet\\taskmanagerapi-renan\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6690E217-1461-4320-8FCF-BBD503350454}|TaskManagerAPI.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6690E217-1461-4320-8FCF-BBD503350454}|TaskManagerAPI.csproj|d:\\black_bugs\\projetos_pessoais\\projetosnet\\taskmanagerapi-renan\\dtos\\projectdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6690E217-1461-4320-8FCF-BBD503350454}|TaskManagerAPI.csproj|solutionrelative:dtos\\projectdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6690E217-1461-4320-8FCF-BBD503350454}|TaskManagerAPI.csproj|d:\\black_bugs\\projetos_pessoais\\projetosnet\\taskmanagerapi-renan\\models\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6690E217-1461-4320-8FCF-BBD503350454}|TaskManagerAPI.csproj|solutionrelative:models\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6690E217-1461-4320-8FCF-BBD503350454}|TaskManagerAPI.csproj|d:\\black_bugs\\projetos_pessoais\\projetosnet\\taskmanagerapi-renan\\controllers\\projectscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6690E217-1461-4320-8FCF-BBD503350454}|TaskManagerAPI.csproj|solutionrelative:controllers\\projectscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +34,84 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\BLACK_BUGS\\Projetos_Pessoais\\ProjetosNET\\TaskManagerAPI-Renan\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\BLACK_BUGS\\Projetos_Pessoais\\ProjetosNET\\TaskManagerAPI-Renan\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAIAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "Project.cs",
+              "DocumentMoniker": "D:\\BLACK_BUGS\\Projetos_Pessoais\\ProjetosNET\\TaskManagerAPI-Renan\\Models\\Project.cs",
+              "RelativeDocumentMoniker": "Models\\Project.cs",
+              "ToolTip": "D:\\BLACK_BUGS\\Projetos_Pessoais\\ProjetosNET\\TaskManagerAPI-Renan\\Models\\Project.cs",
+              "RelativeToolTip": "Models\\Project.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-12T18:34:51.231Z",
+              "WhenOpened": "2025-07-12T19:26:30.135Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProjectDto.cs",
+              "DocumentMoniker": "D:\\BLACK_BUGS\\Projetos_Pessoais\\ProjetosNET\\TaskManagerAPI-Renan\\DTOs\\ProjectDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\ProjectDto.cs",
+              "ToolTip": "D:\\BLACK_BUGS\\Projetos_Pessoais\\ProjetosNET\\TaskManagerAPI-Renan\\DTOs\\ProjectDto.cs",
+              "RelativeToolTip": "DTOs\\ProjectDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-12T19:25:46.748Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\BLACK_BUGS\\Projetos_Pessoais\\ProjetosNET\\TaskManagerAPI-Renan\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
+              "ToolTip": "D:\\BLACK_BUGS\\Projetos_Pessoais\\ProjetosNET\\TaskManagerAPI-Renan\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAswAwAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-12T19:24:42.568Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CreateTaskItemDto.cs",
+              "DocumentMoniker": "D:\\BLACK_BUGS\\Projetos_Pessoais\\ProjetosNET\\TaskManagerAPI-Renan\\DTOs\\CreateTaskItemDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\CreateTaskItemDto.cs",
+              "ToolTip": "D:\\BLACK_BUGS\\Projetos_Pessoais\\ProjetosNET\\TaskManagerAPI-Renan\\DTOs\\CreateTaskItemDto.cs",
+              "RelativeToolTip": "DTOs\\CreateTaskItemDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-12T19:20:09.968Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TasksController.cs",
+              "DocumentMoniker": "D:\\BLACK_BUGS\\Projetos_Pessoais\\ProjetosNET\\TaskManagerAPI-Renan\\Controllers\\TasksController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TasksController.cs",
+              "ToolTip": "D:\\BLACK_BUGS\\Projetos_Pessoais\\ProjetosNET\\TaskManagerAPI-Renan\\Controllers\\TasksController.cs",
+              "RelativeToolTip": "Controllers\\TasksController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABwAAABYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-12T19:17:11.251Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProjectsController.cs",
+              "DocumentMoniker": "D:\\BLACK_BUGS\\Projetos_Pessoais\\ProjetosNET\\TaskManagerAPI-Renan\\Controllers\\ProjectsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProjectsController.cs",
+              "ToolTip": "D:\\BLACK_BUGS\\Projetos_Pessoais\\ProjetosNET\\TaskManagerAPI-Renan\\Controllers\\ProjectsController.cs",
+              "RelativeToolTip": "Controllers\\ProjectsController.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAA1wCoAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-12T19:16:22.699Z",
               "EditorCaption": ""
             }
           ]

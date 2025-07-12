@@ -44,6 +44,9 @@ namespace TaskManagerAPI.Migrations
                     b.Property<string>("Details")
                         .HasColumnType("TEXT");
 
+                    b.Property<int>("Priority")
+                        .HasColumnType("INTEGER");
+
                     b.Property<int>("ProjectId")
                         .HasColumnType("INTEGER");
 

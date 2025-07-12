@@ -34,7 +34,7 @@ public class ProjectsController : ControllerBase
 
         var tasks = await _db.Tasks
             .Where(t => t.ProjectId == id)
-            .Select(t => new TaskItemDto(t.Id, t.Title, t.Details, t.Status, t.ProjectId))
+            .Select(t => new TaskItemDto(t.Id, t.Title, t.Details, t.Status, t.Priority, t.ProjectId))
             .ToListAsync();
         return Ok(tasks);
     }
