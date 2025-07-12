@@ -45,13 +45,58 @@ public class TasksController : ControllerBase
         var task = await _db.Tasks.FirstOrDefaultAsync(t => t.ProjectId == projectId && t.Id == id);
         if (task is null) return NotFound();
 
+        var user = User?.Identity?.Name ?? "Sistema"; // ou use outro mecanismo para obter o usuário
+
+        var now = DateTime.UtcNow;
+        var changes = new List<TaskUpdateHistory>();
+
+        if (dto.Title != task.Title)
+            changes.Add(new TaskUpdateHistory
+            {
+                TaskId = task.Id,
+                PropertyChanged = "Title",
+                OldValue = task.Title,
+                NewValue = dto.Title,
+                ChangedAt = now,
+                ChangedBy = user
+            });
+
+        if (dto.Details != task.Details)
+            changes.Add(new TaskUpdateHistory
+            {
+                TaskId = task.Id,
+                PropertyChanged = "Details",
+                OldValue = task.Details,
+                NewValue = dto.Details,
+                ChangedAt = now,
+                ChangedBy = user
+            });
+
+        if (dto.Status != task.Status)
+            changes.Add(new TaskUpdateHistory
+            {
+                TaskId = task.Id,
+                PropertyChanged = "Status",
+                OldValue = task.Status.ToString(),
+                NewValue = dto.Status.ToString(),
+                ChangedAt = now,
+                ChangedBy = user
+            });
+
+        // Impede a alteração da prioridade (regra de negócio)
         if (dto.Priority != task.Priority)
         {
             return BadRequest("Não é permitido alterar a prioridade da tarefa depois que ela foi criada.");
         }
+
+        // Atualização de campos
         task.Title = dto.Title;
         task.Details = dto.Details;
         task.Status = dto.Status;
+
+        if (changes.Any())
+            await _db.TaskUpdateHistories.AddRangeAsync(changes);
+
         await _db.SaveChangesAsync();
         return NoContent();
     }

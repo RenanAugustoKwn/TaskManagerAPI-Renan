@@ -70,4 +70,18 @@ public class ProjectsController : ControllerBase
         await _db.SaveChangesAsync();
         return NoContent();
     }
+
+    [HttpGet("{id:int}/tasks/{taskId:int}/history")]
+    public async Task<ActionResult<IEnumerable<TaskUpdateHistory>>> GetTaskHistory(int projectId, int taskId)
+    {
+        var exists = await _db.Tasks.AnyAsync(t => t.ProjectId == projectId && t.Id == taskId);
+        if (!exists) return NotFound();
+
+        var history = await _db.TaskUpdateHistories
+            .Where(h => h.TaskId == taskId)
+            .OrderByDescending(h => h.ChangedAt)
+            .ToListAsync();
+
+        return Ok(history);
+    }
 }
