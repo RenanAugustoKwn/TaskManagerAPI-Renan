@@ -48,4 +48,26 @@ public class ProjectsController : ControllerBase
         await _db.SaveChangesAsync();
         return CreatedAtAction(nameof(GetProjects), new { id = project.Id }, new ProjectDto(project.Id, project.Name, project.Description));
     }
+
+    // DELETE: api/projects/5
+    [HttpDelete("{id:int}")]
+    public async Task<IActionResult> DeleteProject(int id)
+    {
+        var project = await _db.Projects
+            .Include(p => p.Tasks)
+            .FirstOrDefaultAsync(p => p.Id == id);
+
+        if (project is null) return NotFound();
+
+        // Verifica se há tarefas pendentes
+        var hasPendingTasks = project.Tasks.Any(t => t.Status == Models.TaskStatus.Pending);
+        if (hasPendingTasks)
+        {
+            return BadRequest("Não é possível remover o projeto enquanto houver tarefas pendentes. Conclua ou remova as tarefas primeiro.");
+        }
+
+        _db.Projects.Remove(project);
+        await _db.SaveChangesAsync();
+        return NoContent();
+    }
 }
