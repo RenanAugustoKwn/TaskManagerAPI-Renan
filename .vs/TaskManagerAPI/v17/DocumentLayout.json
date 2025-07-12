@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\BLACK_BUGS\\Projetos_Pessoais\\ProjetosNET\\TaskManagerAPI-Renan\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6690E217-1461-4320-8FCF-BBD503350454}|TaskManagerAPI.csproj|d:\\black_bugs\\projetos_pessoais\\projetosnet\\taskmanagerapi-renan\\controllers\\projectscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6690E217-1461-4320-8FCF-BBD503350454}|TaskManagerAPI.csproj|solutionrelative:controllers\\projectscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6690E217-1461-4320-8FCF-BBD503350454}|TaskManagerAPI.csproj|d:\\black_bugs\\projetos_pessoais\\projetosnet\\taskmanagerapi-renan\\controllers\\taskscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6690E217-1461-4320-8FCF-BBD503350454}|TaskManagerAPI.csproj|solutionrelative:controllers\\taskscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6690E217-1461-4320-8FCF-BBD503350454}|TaskManagerAPI.csproj|d:\\black_bugs\\projetos_pessoais\\projetosnet\\taskmanagerapi-renan\\controllers\\projectscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6690E217-1461-4320-8FCF-BBD503350454}|TaskManagerAPI.csproj|solutionrelative:controllers\\projectscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6690E217-1461-4320-8FCF-BBD503350454}|TaskManagerAPI.csproj|d:\\black_bugs\\projetos_pessoais\\projetosnet\\taskmanagerapi-renan\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -50,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
@@ -62,8 +62,7 @@
               "RelativeToolTip": "DTOs\\TaskItemDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-12T20:42:28.327Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-12T20:42:28.327Z"
             },
             {
               "$type": "Document",
@@ -75,8 +74,7 @@
               "RelativeToolTip": "DTOs\\CreateProjectDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-12T20:17:44.781Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-12T20:17:44.781Z"
             },
             {
               "$type": "Document",
@@ -88,8 +86,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAD4vx4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-12T20:17:35.222Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-12T20:17:35.222Z"
             },
             {
               "$type": "Document",
@@ -101,8 +98,7 @@
               "RelativeToolTip": "Models\\TaskItem.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAwwBcAAABoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-12T20:12:48.586Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-12T20:12:48.586Z"
             },
             {
               "$type": "Document",
@@ -114,8 +110,7 @@
               "RelativeToolTip": "Models\\Project.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-12T19:26:30.135Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-12T19:26:30.135Z"
             },
             {
               "$type": "Document",
@@ -127,8 +122,7 @@
               "RelativeToolTip": "DTOs\\ProjectDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-12T19:25:46.748Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-12T19:25:46.748Z"
             },
             {
               "$type": "Document",
@@ -140,8 +134,7 @@
               "RelativeToolTip": "Data\\AppDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-12T19:24:42.568Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-12T19:24:42.568Z"
             },
             {
               "$type": "Document",
@@ -157,20 +150,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "TasksController.cs",
               "DocumentMoniker": "D:\\BLACK_BUGS\\Projetos_Pessoais\\ProjetosNET\\TaskManagerAPI-Renan\\Controllers\\TasksController.cs",
               "RelativeDocumentMoniker": "Controllers\\TasksController.cs",
               "ToolTip": "D:\\BLACK_BUGS\\Projetos_Pessoais\\ProjetosNET\\TaskManagerAPI-Renan\\Controllers\\TasksController.cs",
               "RelativeToolTip": "Controllers\\TasksController.cs",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAUwGUAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBkAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-12T19:17:11.251Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ProjectsController.cs",
               "DocumentMoniker": "D:\\BLACK_BUGS\\Projetos_Pessoais\\ProjetosNET\\TaskManagerAPI-Renan\\Controllers\\ProjectsController.cs",
               "RelativeDocumentMoniker": "Controllers\\ProjectsController.cs",
