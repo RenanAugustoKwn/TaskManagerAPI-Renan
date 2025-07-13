@@ -78,8 +78,8 @@ public class TasksController : ControllerBase
             {
                 TaskId = task.Id,
                 PropertyChanged = "Details",
-                OldValue = task.Details,
-                NewValue = dto.Details,
+                OldValue = task.Details == null? "": task.Details,
+                NewValue = dto.Details == null ? "" : dto.Details,
                 ChangedAt = now,
                 ChangedBy = user
             });
