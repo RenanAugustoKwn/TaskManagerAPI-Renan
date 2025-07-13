@@ -233,6 +233,32 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "TaskManagementApiProject.Controllers.TasksController",
+    "Method": "AddComment",
+    "RelativePath": "api/projects/{projectId}/Tasks/{id}/comment",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "projectId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "TaskManagementApiProject.DTOs.AddTaskCommentDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "TaskManagementApiProject.Controllers.ReportsController",
     "Method": "GetPerformanceReport",
     "RelativePath": "api/Reports/performance",

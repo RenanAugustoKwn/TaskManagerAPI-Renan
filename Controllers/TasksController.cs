@@ -123,4 +123,33 @@ public class TasksController : ControllerBase
         await _db.SaveChangesAsync();
         return NoContent();
     }
+
+    // POST: api/projects/{projectId}/tasks/{id}/comment
+    [HttpPost("{id:int}/comment")]
+    public async Task<IActionResult> AddComment(int projectId, int id, AddTaskCommentDto dto)
+    {
+        var task = await _db.Tasks.FirstOrDefaultAsync(t => t.ProjectId == projectId && t.Id == id);
+        if (task is null) return NotFound();
+
+        if (string.IsNullOrWhiteSpace(dto.Comment))
+            return BadRequest("O comentário não pode estar vazio.");
+
+        var user = User?.Identity?.Name ?? "Sistema";
+        var now = DateTime.UtcNow;
+
+        var commentEntry = new TaskUpdateHistory
+        {
+            TaskId = task.Id,
+            PropertyChanged = "Comment",
+            OldValue = string.Empty,
+            NewValue = dto.Comment,
+            ChangedAt = now,
+            ChangedBy = user
+        };
+
+        await _db.TaskUpdateHistories.AddAsync(commentEntry);
+        await _db.SaveChangesAsync();
+
+        return Ok("Comentário adicionado com sucesso.");
+    }
 }
