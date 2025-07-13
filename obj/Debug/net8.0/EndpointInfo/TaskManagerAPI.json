@@ -10,6 +10,26 @@
         "tags": [
           "Projects"
         ],
+        "parameters": [
+          {
+            "name": "X-User",
+            "in": "header",
+            "description": "Nome do usuário (ex: joao)",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "X-Role",
+            "in": "header",
+            "description": "Papel do usuário (ex: gerente ou colaborador)",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
         "responses": {
           "200": {
             "description": "OK",
@@ -45,6 +65,26 @@
       "post": {
         "tags": [
           "Projects"
+        ],
+        "parameters": [
+          {
+            "name": "X-User",
+            "in": "header",
+            "description": "Nome do usuário (ex: joao)",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "X-Role",
+            "in": "header",
+            "description": "Papel do usuário (ex: gerente ou colaborador)",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
         ],
         "requestBody": {
           "content": {
@@ -103,6 +143,24 @@
               "type": "integer",
               "format": "int32"
             }
+          },
+          {
+            "name": "X-User",
+            "in": "header",
+            "description": "Nome do usuário (ex: joao)",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "X-Role",
+            "in": "header",
+            "description": "Papel do usuário (ex: gerente ou colaborador)",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -152,6 +210,24 @@
               "type": "integer",
               "format": "int32"
             }
+          },
+          {
+            "name": "X-User",
+            "in": "header",
+            "description": "Nome do usuário (ex: joao)",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "X-Role",
+            "in": "header",
+            "description": "Papel do usuário (ex: gerente ou colaborador)",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -191,6 +267,24 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "X-User",
+            "in": "header",
+            "description": "Nome do usuário (ex: joao)",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "X-Role",
+            "in": "header",
+            "description": "Papel do usuário (ex: gerente ou colaborador)",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -226,6 +320,64 @@
         }
       }
     },
+    "/api/Reports/performance": {
+      "get": {
+        "tags": [
+          "Reports"
+        ],
+        "parameters": [
+          {
+            "name": "X-User",
+            "in": "header",
+            "description": "Nome do usuário (ex: joao)",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "X-Role",
+            "in": "header",
+            "description": "Papel do usuário (ex: gerente ou colaborador)",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/UserPerformanceReportDto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/UserPerformanceReportDto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/UserPerformanceReportDto"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/projects/{projectId}/Tasks": {
       "post": {
         "tags": [
@@ -239,6 +391,24 @@
             "schema": {
               "type": "integer",
               "format": "int32"
+            }
+          },
+          {
+            "name": "X-User",
+            "in": "header",
+            "description": "Nome do usuário (ex: joao)",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "X-Role",
+            "in": "header",
+            "description": "Papel do usuário (ex: gerente ou colaborador)",
+            "required": true,
+            "schema": {
+              "type": "string"
             }
           }
         ],
@@ -308,6 +478,24 @@
               "type": "integer",
               "format": "int32"
             }
+          },
+          {
+            "name": "X-User",
+            "in": "header",
+            "description": "Nome do usuário (ex: joao)",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "X-Role",
+            "in": "header",
+            "description": "Papel do usuário (ex: gerente ou colaborador)",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -354,6 +542,24 @@
             "schema": {
               "type": "integer",
               "format": "int32"
+            }
+          },
+          {
+            "name": "X-User",
+            "in": "header",
+            "description": "Nome do usuário (ex: joao)",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "X-Role",
+            "in": "header",
+            "description": "Papel do usuário (ex: gerente ou colaborador)",
+            "required": true,
+            "schema": {
+              "type": "string"
             }
           }
         ],
@@ -403,6 +609,24 @@
             "schema": {
               "type": "integer",
               "format": "int32"
+            }
+          },
+          {
+            "name": "X-User",
+            "in": "header",
+            "description": "Nome do usuário (ex: joao)",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "X-Role",
+            "in": "header",
+            "description": "Papel do usuário (ex: gerente ou colaborador)",
+            "required": true,
+            "schema": {
+              "type": "string"
             }
           }
         ],
@@ -621,6 +845,32 @@
           }
         },
         "additionalProperties": false
+      },
+      "UserPerformanceReportDto": {
+        "type": "object",
+        "properties": {
+          "username": {
+            "type": "string",
+            "nullable": true
+          },
+          "tasksCompleted": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "avgPerDay": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "securitySchemes": {
+      "custom-auth": {
+        "type": "apiKey",
+        "description": "Cabeçalho X-User e X-Role para simular autenticação",
+        "name": "X-User",
+        "in": "header"
       }
     }
   }
