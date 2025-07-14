@@ -10,26 +10,6 @@
         "tags": [
           "Projects"
         ],
-        "parameters": [
-          {
-            "name": "X-User",
-            "in": "header",
-            "description": "Nome do usuário (ex: joao)",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "X-Role",
-            "in": "header",
-            "description": "Papel do usuário (ex: gerente ou colaborador)",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
         "responses": {
           "200": {
             "description": "OK",
@@ -65,26 +45,6 @@
       "post": {
         "tags": [
           "Projects"
-        ],
-        "parameters": [
-          {
-            "name": "X-User",
-            "in": "header",
-            "description": "Nome do usuário (ex: joao)",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "X-Role",
-            "in": "header",
-            "description": "Papel do usuário (ex: gerente ou colaborador)",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
         ],
         "requestBody": {
           "content": {
@@ -143,24 +103,6 @@
               "type": "integer",
               "format": "int32"
             }
-          },
-          {
-            "name": "X-User",
-            "in": "header",
-            "description": "Nome do usuário (ex: joao)",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "X-Role",
-            "in": "header",
-            "description": "Papel do usuário (ex: gerente ou colaborador)",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
           }
         ],
         "responses": {
@@ -210,24 +152,6 @@
               "type": "integer",
               "format": "int32"
             }
-          },
-          {
-            "name": "X-User",
-            "in": "header",
-            "description": "Nome do usuário (ex: joao)",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "X-Role",
-            "in": "header",
-            "description": "Papel do usuário (ex: gerente ou colaborador)",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
           }
         ],
         "responses": {
@@ -263,24 +187,6 @@
           {
             "name": "id",
             "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "X-User",
-            "in": "header",
-            "description": "Nome do usuário (ex: joao)",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "X-Role",
-            "in": "header",
-            "description": "Papel do usuário (ex: gerente ou colaborador)",
             "required": true,
             "schema": {
               "type": "string"
@@ -392,24 +298,6 @@
               "type": "integer",
               "format": "int32"
             }
-          },
-          {
-            "name": "X-User",
-            "in": "header",
-            "description": "Nome do usuário (ex: joao)",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "X-Role",
-            "in": "header",
-            "description": "Papel do usuário (ex: gerente ou colaborador)",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
           }
         ],
         "requestBody": {
@@ -478,24 +366,6 @@
               "type": "integer",
               "format": "int32"
             }
-          },
-          {
-            "name": "X-User",
-            "in": "header",
-            "description": "Nome do usuário (ex: joao)",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "X-Role",
-            "in": "header",
-            "description": "Papel do usuário (ex: gerente ou colaborador)",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
           }
         ],
         "responses": {
@@ -542,24 +412,6 @@
             "schema": {
               "type": "integer",
               "format": "int32"
-            }
-          },
-          {
-            "name": "X-User",
-            "in": "header",
-            "description": "Nome do usuário (ex: joao)",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "X-Role",
-            "in": "header",
-            "description": "Papel do usuário (ex: gerente ou colaborador)",
-            "required": true,
-            "schema": {
-              "type": "string"
             }
           }
         ],
@@ -610,24 +462,6 @@
               "type": "integer",
               "format": "int32"
             }
-          },
-          {
-            "name": "X-User",
-            "in": "header",
-            "description": "Nome do usuário (ex: joao)",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "X-Role",
-            "in": "header",
-            "description": "Papel do usuário (ex: gerente ou colaborador)",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
           }
         ],
         "responses": {
@@ -659,24 +493,6 @@
             "schema": {
               "type": "integer",
               "format": "int32"
-            }
-          },
-          {
-            "name": "X-User",
-            "in": "header",
-            "description": "Nome do usuário (ex: joao)",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "X-Role",
-            "in": "header",
-            "description": "Papel do usuário (ex: gerente ou colaborador)",
-            "required": true,
-            "schema": {
-              "type": "string"
             }
           }
         ],

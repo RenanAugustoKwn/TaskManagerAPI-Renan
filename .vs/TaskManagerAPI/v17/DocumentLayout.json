@@ -3,8 +3,24 @@
   "WorkspaceRootPath": "D:\\BLACK_BUGS\\Projetos_Pessoais\\ProjetosNET\\TaskManagerAPI-Renan\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{6690E217-1461-4320-8FCF-BBD503350454}|TaskManagerAPI.csproj|d:\\black_bugs\\projetos_pessoais\\projetosnet\\taskmanagerapi-renan\\addrequiredheadersfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6690E217-1461-4320-8FCF-BBD503350454}|TaskManagerAPI.csproj|solutionrelative:addrequiredheadersfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6690E217-1461-4320-8FCF-BBD503350454}|TaskManagerAPI.csproj|d:\\black_bugs\\projetos_pessoais\\projetosnet\\taskmanagerapi-renan\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6690E217-1461-4320-8FCF-BBD503350454}|TaskManagerAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6690E217-1461-4320-8FCF-BBD503350454}|TaskManagerAPI.csproj|d:\\black_bugs\\projetos_pessoais\\projetosnet\\taskmanagerapi-renan\\models\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6690E217-1461-4320-8FCF-BBD503350454}|TaskManagerAPI.csproj|solutionrelative:models\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6690E217-1461-4320-8FCF-BBD503350454}|TaskManagerAPI.csproj|d:\\black_bugs\\projetos_pessoais\\projetosnet\\taskmanagerapi-renan\\controllers\\projectscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6690E217-1461-4320-8FCF-BBD503350454}|TaskManagerAPI.csproj|solutionrelative:controllers\\projectscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6690E217-1461-4320-8FCF-BBD503350454}|TaskManagerAPI.csproj|d:\\black_bugs\\projetos_pessoais\\projetosnet\\taskmanagerapi-renan\\controllers\\reportscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6690E217-1461-4320-8FCF-BBD503350454}|TaskManagerAPI.csproj|solutionrelative:controllers\\reportscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6690E217-1461-4320-8FCF-BBD503350454}|TaskManagerAPI.csproj|d:\\black_bugs\\projetos_pessoais\\projetosnet\\taskmanagerapi-renan\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
@@ -35,19 +51,71 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "AddRequiredHeadersFilter.cs",
+              "DocumentMoniker": "D:\\BLACK_BUGS\\Projetos_Pessoais\\ProjetosNET\\TaskManagerAPI-Renan\\AddRequiredHeadersFilter.cs",
+              "RelativeDocumentMoniker": "AddRequiredHeadersFilter.cs",
+              "ToolTip": "D:\\BLACK_BUGS\\Projetos_Pessoais\\ProjetosNET\\TaskManagerAPI-Renan\\AddRequiredHeadersFilter.cs",
+              "RelativeToolTip": "AddRequiredHeadersFilter.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-14T18:08:15.737Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Project.cs",
+              "DocumentMoniker": "D:\\BLACK_BUGS\\Projetos_Pessoais\\ProjetosNET\\TaskManagerAPI-Renan\\Models\\Project.cs",
+              "RelativeDocumentMoniker": "Models\\Project.cs",
+              "ToolTip": "D:\\BLACK_BUGS\\Projetos_Pessoais\\ProjetosNET\\TaskManagerAPI-Renan\\Models\\Project.cs",
+              "RelativeToolTip": "Models\\Project.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-14T18:07:30.718Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ReportsController.cs",
+              "DocumentMoniker": "D:\\BLACK_BUGS\\Projetos_Pessoais\\ProjetosNET\\TaskManagerAPI-Renan\\Controllers\\ReportsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ReportsController.cs",
+              "ToolTip": "D:\\BLACK_BUGS\\Projetos_Pessoais\\ProjetosNET\\TaskManagerAPI-Renan\\Controllers\\ReportsController.cs",
+              "RelativeToolTip": "Controllers\\ReportsController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-14T18:05:27.111Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProjectsController.cs",
+              "DocumentMoniker": "D:\\BLACK_BUGS\\Projetos_Pessoais\\ProjetosNET\\TaskManagerAPI-Renan\\Controllers\\ProjectsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProjectsController.cs",
+              "ToolTip": "D:\\BLACK_BUGS\\Projetos_Pessoais\\ProjetosNET\\TaskManagerAPI-Renan\\Controllers\\ProjectsController.cs",
+              "RelativeToolTip": "Controllers\\ProjectsController.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAcwBoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-14T18:03:58.023Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\BLACK_BUGS\\Projetos_Pessoais\\ProjetosNET\\TaskManagerAPI-Renan\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "D:\\BLACK_BUGS\\Projetos_Pessoais\\ProjetosNET\\TaskManagerAPI-Renan\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAAAGQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAAAFEAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-13T21:17:35.785Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "TaskManagerAPI.http",
               "DocumentMoniker": "D:\\BLACK_BUGS\\Projetos_Pessoais\\ProjetosNET\\TaskManagerAPI-Renan\\TaskManagerAPI.http",
               "RelativeDocumentMoniker": "TaskManagerAPI.http",
@@ -59,7 +127,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "Dockerfile",
               "DocumentMoniker": "D:\\BLACK_BUGS\\Projetos_Pessoais\\ProjetosNET\\TaskManagerAPI-Renan\\Dockerfile",
               "RelativeDocumentMoniker": "Dockerfile",
@@ -71,7 +139,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\BLACK_BUGS\\Projetos_Pessoais\\ProjetosNET\\TaskManagerAPI-Renan\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -83,7 +151,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "TasksController.cs",
               "DocumentMoniker": "D:\\BLACK_BUGS\\Projetos_Pessoais\\ProjetosNET\\TaskManagerAPI-Renan\\Controllers\\TasksController.cs",
               "RelativeDocumentMoniker": "Controllers\\TasksController.cs",

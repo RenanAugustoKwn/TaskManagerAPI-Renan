@@ -1,12 +1,18 @@
 ﻿using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.SwaggerGen;
+using System.Reflection;
 
 public class AddRequiredHeadersFilter : IOperationFilter
 {
     public void Apply(OpenApiOperation operation, OperationFilterContext context)
     {
-        if (operation.Parameters == null)
-            operation.Parameters = new List<OpenApiParameter>();
+        var controllerName = context.MethodInfo.DeclaringType?.Name;
+
+        // Só adiciona os headers se for o ReportsController
+        if (controllerName != "ReportsController")
+            return;
+
+        operation.Parameters ??= new List<OpenApiParameter>();
 
         operation.Parameters.Add(new OpenApiParameter
         {
